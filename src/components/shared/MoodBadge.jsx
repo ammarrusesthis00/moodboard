@@ -1,14 +1,13 @@
-import { moods } from '../../utils/moods';
+const moodColors = {
+  happy: 'bg-green-400',
+  sad: 'bg-blue-400',
+  funny: 'bg-yellow-500',
+  angry: 'bg-red-500'
+};
 
 export default function MoodBadge({ mood }) {
   return (
-    <span style={{ 
-      backgroundColor: moods[mood], 
-      padding: '2px 6px', 
-      borderRadius: '4px', 
-      fontWeight: 'bold',
-      marginRight: '5px'
-    }}>
+    <span className={`px-2 py-1 rounded text-white text-sm font-semibold mr-2 ${moodColors[mood]}`}>
       {mood}
     </span>
   );

@@ -11,7 +11,7 @@ export default function Home() {
 
   return (
     <PageWrapper>
-      <h1 style={{ textAlign: 'center' }}>MoodBoard Feed</h1>
+      <h1 style={{ textAlign: 'center' }} className='text-white text-3xl mb-12'>MoodBoard Feed</h1>
       <MoodFilter filter={filter} setFilter={setFilter} /> {/* <-- pass correctly */}
       <Feed posts={filterPosts(posts)} />
     </PageWrapper>
